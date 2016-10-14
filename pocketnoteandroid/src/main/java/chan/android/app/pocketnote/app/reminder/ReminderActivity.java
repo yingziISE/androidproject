@@ -136,7 +136,8 @@ public class ReminderActivity extends SherlockFragmentActivity {
   public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
     switch (item.getItemId()) {
       case R.id.reminder_menu_$_dismiss: {
-        ConfirmDialogFragment d = new ConfirmDialogFragment("Dismiss reminder for this event", "Cancel", "Yes");
+        ConfirmDialogFragment d = new ConfirmDialogFragment
+                ("此事件的提醒", "取消", "确定");
         d.setOnConfirmListener(new ConfirmDialogFragment.OnConfirmListener() {
           @Override
           public void onEnter(boolean ok) {
@@ -191,7 +192,7 @@ public class ReminderActivity extends SherlockFragmentActivity {
     textViewType.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        Toast.makeText(ReminderActivity.this, "Event has expired", Toast.LENGTH_LONG).show();
+        Toast.makeText(ReminderActivity.this, "事件已过期", Toast.LENGTH_LONG).show();
       }
     });
 
@@ -273,7 +274,7 @@ public class ReminderActivity extends SherlockFragmentActivity {
       allDayButtonDatePicker.setText(DateTimeUtility.getReminderReadableDate(beginDate));
     }
     if (reminder.getEnd() == 0) {
-      allDayButtonEnd.setText("Never");
+      allDayButtonEnd.setText("从不");
     } else {
       DateTime endDate = new DateTime(reminder.getEnd());
       calendarEnd.setTime(endDate.toDate());
@@ -291,7 +292,7 @@ public class ReminderActivity extends SherlockFragmentActivity {
       timeAlarmButtonTimePicker.setText(DateTimeUtility.getReminderReadableTime(beginDate.getHourOfDay(), beginDate.getMinuteOfHour()));
     }
     if (reminder.getEnd() == 0) {
-      timeAlarmButtonEnd.setText("Never");
+      timeAlarmButtonEnd.setText("从不");
     } else {
       DateTime endDate = new DateTime(reminder.getEnd());
       calendarEnd.setTime(endDate.toDate());
@@ -324,7 +325,7 @@ public class ReminderActivity extends SherlockFragmentActivity {
     allDaySpinnerWhen.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
       @Override
       public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        if (days[position].equals("Specific date")) {
+        if (days[position].equals("具体的日期")) {
           allDayButtonDatePicker.setVisibility(View.VISIBLE);
         } else {
           allDayButtonDatePicker.setVisibility(View.GONE);
@@ -378,7 +379,7 @@ public class ReminderActivity extends SherlockFragmentActivity {
       }
     });
 
-    allDayButtonEnd.setText("Never");
+    allDayButtonEnd.setText("从不");
     allDayButtonEnd.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
@@ -548,20 +549,20 @@ public class ReminderActivity extends SherlockFragmentActivity {
   }
 
   private enum TimeAlarmOption {
-    MINUTE_5("5 minutes", TimeUnit.MINUTES.toMillis(5)),
-    MINUTE_10("10 minutes", TimeUnit.MINUTES.toMillis(10)),
-    MINUTE_15("15 minutes", TimeUnit.MINUTES.toMillis(15)),
-    MINUTE_20("20 minutes", TimeUnit.MINUTES.toMillis(20)),
-    MINUTE_25("25 minutes", TimeUnit.MINUTES.toMillis(25)),
-    MINUTE_30("30 minutes", TimeUnit.MINUTES.toMillis(30)),
-    MINUTE_45("45 minutes", TimeUnit.MINUTES.toMillis(45)),
-    HOUR_1("1 hour", TimeUnit.HOURS.toMillis(1)),
-    HOUR_2("2 hour", TimeUnit.HOURS.toMillis(2)),
-    HOUR_3("3 hour", TimeUnit.HOURS.toMillis(3)),
-    HOUR_6("6 hour", TimeUnit.HOURS.toMillis(6)),
-    HOUR_12("12 hour", TimeUnit.HOURS.toMillis(12)),
-    HOUR_24("24 hour", TimeUnit.HOURS.toMillis(24)),
-    SPECIFIC("Specific date time", 0);
+    MINUTE_5("5 分钟", TimeUnit.MINUTES.toMillis(5)),
+    MINUTE_10("10 分钟", TimeUnit.MINUTES.toMillis(10)),
+    MINUTE_15("15 分钟", TimeUnit.MINUTES.toMillis(15)),
+    MINUTE_20("20 分钟", TimeUnit.MINUTES.toMillis(20)),
+    MINUTE_25("25 分钟", TimeUnit.MINUTES.toMillis(25)),
+    MINUTE_30("30 分钟", TimeUnit.MINUTES.toMillis(30)),
+    MINUTE_45("45 分钟", TimeUnit.MINUTES.toMillis(45)),
+    HOUR_1("1 小时", TimeUnit.HOURS.toMillis(1)),
+    HOUR_2("2 小时", TimeUnit.HOURS.toMillis(2)),
+    HOUR_3("3 小时", TimeUnit.HOURS.toMillis(3)),
+    HOUR_6("6 小时", TimeUnit.HOURS.toMillis(6)),
+    HOUR_12("12 小时", TimeUnit.HOURS.toMillis(12)),
+    HOUR_24("24 小时", TimeUnit.HOURS.toMillis(24)),
+    SPECIFIC("具体日期时间", 0);
 
     final String description;
     final long milliseconds;
@@ -611,7 +612,7 @@ public class ReminderActivity extends SherlockFragmentActivity {
 
       // Parse end
       long end = 0L;
-      if (!timeAlarmButtonEnd.getText().toString().equals("Never")) {
+      if (!timeAlarmButtonEnd.getText().toString().equals("从不")) {
         end = calendarEnd.getTimeInMillis();
       }
 
@@ -644,7 +645,7 @@ public class ReminderActivity extends SherlockFragmentActivity {
 
       // Parse end
       long end = 0L;
-      if (!allDayButtonEnd.getText().toString().equals("Never")) {
+      if (!allDayButtonEnd.getText().toString().equals("从不")) {
         end = calendarEnd.getTimeInMillis();
       }
 

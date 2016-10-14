@@ -37,7 +37,7 @@ public class AppPreferences {
 
   public static void saveDefaultAlphabetSortColumn(String column) {
     if (!AVAILABLE_COLUMNS.contains(column)) {
-      throw new RuntimeException("Invalid alphabet column: " + column);
+      throw new RuntimeException("无效的字母列: " + column);
     }
     prefs.edit().putString(Key.ALPHABET_SORT_COLUMN.name(), column).commit();
   }
@@ -106,7 +106,7 @@ public class AppPreferences {
   }
 
   public static String getUserName() {
-    return prefs.getString(Key.USER_NAME.name(), "Anonymous");
+    return prefs.getString(Key.USER_NAME.name(), "匿名");
   }
 
   private enum Key {

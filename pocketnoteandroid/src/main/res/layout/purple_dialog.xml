@@ -9,7 +9,7 @@
             android:id="@+id/purple_dialog_$_textview_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Title"
+            android:text="列表"
             android:padding="10dp"
             android:textColor="#FFFFFF"
             android:textStyle="bold"

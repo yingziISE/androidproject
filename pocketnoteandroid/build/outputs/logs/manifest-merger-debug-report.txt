@@ -1,8 +1,6 @@
 -- Merging decision tree log ---
 manifest
 ADDED from AndroidManifest.xml:2:1
-	xmlns:android
-		ADDED from AndroidManifest.xml:2:11
 	package
 		ADDED from AndroidManifest.xml:3:11
 		INJECTED from AndroidManifest.xml:0:0
@@ -13,6 +11,8 @@ ADDED from AndroidManifest.xml:2:1
 		ADDED from AndroidManifest.xml:4:11
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
 uses-sdk
 ADDED from AndroidManifest.xml:7:5
 MERGED from com.actionbarsherlock:actionbarsherlock:4.4.0:3:3
@@ -90,10 +90,10 @@ ADDED from AndroidManifest.xml:31:9
 		ADDED from AndroidManifest.xml:31:19
 provider#chan.android.app.pocketnote.app.db.NoteContentProvider
 ADDED from AndroidManifest.xml:33:9
-	android:multiprocess
-		ADDED from AndroidManifest.xml:35:17
 	android:authorities
 		ADDED from AndroidManifest.xml:36:17
+	android:multiprocess
+		ADDED from AndroidManifest.xml:35:17
 	android:name
 		ADDED from AndroidManifest.xml:34:17
 receiver#chan.android.app.pocketnote.app.reminder.alarm.AlarmReceiver

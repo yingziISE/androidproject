@@ -35,27 +35,29 @@ import java.util.List;
 
 public class SettingsFragment extends SherlockFragment {
 
-  public static final String TAG = "Settings";
+  public static final String TAG = "设置";
   static final String[] SORTING_OPTIONS = new String[]{
-    "By modified time",
-    "By alphabet",
-    "By color"
+    "修改时间",
+    "字母",
+    "颜色"
   };
   static final String[] VIEW_OPTIONS = new String[]{
-    "As list view",
-    "As grid view"
+    "表格式图",
+    "网络视图"
   };
   static final String[] ALPHABET_COLUMN_OPTIONS = new String[]{
-    "By title",
-    "By content"
+    "标题",
+    "内容"
   };
   private static final int INTENT_TAKE_PHOTO = 0;
   private static final int INTENT_CHOOSE_PHOTO = 1;
   private static final List<ActionListDialogFragment.Item> PHOTO_ACTIONS = new ArrayList<ActionListDialogFragment.Item>();
 
   static {
-    PHOTO_ACTIONS.add(new ActionListDialogFragment.Item(R.drawable.ic_action_device_access_camera, "Take photo"));
-    PHOTO_ACTIONS.add(new ActionListDialogFragment.Item(R.drawable.ic_action_content_picture, "Choose photo"));
+    PHOTO_ACTIONS.add(new ActionListDialogFragment.Item
+            (R.drawable.ic_action_device_access_camera, "照相机"));
+    PHOTO_ACTIONS.add(new ActionListDialogFragment.Item
+            (R.drawable.ic_action_content_picture, "相册"));
   }
 
   private Button buttonColor;
@@ -177,7 +179,7 @@ public class SettingsFragment extends SherlockFragment {
       @Override
       public void onClick(View v) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=chan.android.app.pocketnote"));
+        intent.setData(Uri.parse("https://github.com/yingziISE"));
         startActivity(intent);
       }
     });
@@ -186,11 +188,11 @@ public class SettingsFragment extends SherlockFragment {
     relativeLayoutPhoto.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        ActionListDialogFragment d = ActionListDialogFragment.newInstance("Change photo", PHOTO_ACTIONS);
+        ActionListDialogFragment d = ActionListDialogFragment.newInstance("相机", PHOTO_ACTIONS);
         d.setPickItemListener(new ActionListDialogFragment.OnPickItemListener() {
           @Override
           public void onPick(int index) {
-            if (PHOTO_ACTIONS.get(index).getName().equals("Take photo")) {
+            if (PHOTO_ACTIONS.get(index).getName().equals("相册")) {
               dispatchTakePictureIntent();
             } else {
               Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
@@ -220,7 +222,7 @@ public class SettingsFragment extends SherlockFragment {
 
           @Override
           public void onReset() {
-            AppPreferences.saveUserName("Anonymous");
+            AppPreferences.saveUserName("用户名");
             d.dismiss();
             textViewUserName.setText(AppPreferences.getUserName());
           }
@@ -241,7 +243,7 @@ public class SettingsFragment extends SherlockFragment {
       try {
         photoFile = createImageFile();
       } catch (IOException e) {
-        Logger.e("Hmm, io exception? " + e.getMessage());
+        Logger.e("嗯，我的例外？ " + e.getMessage());
       }
       // Continue only if the File was successfully created
       if (photoFile != null) {

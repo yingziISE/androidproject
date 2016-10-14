@@ -42,17 +42,17 @@ public class NoteReminderScheduler extends AbstractReminderScheduler {
   public void schedule(final Note note) {
     String json = note.getReminder();
     if (json == null) {
-      throw new RuntimeException("You can't schedule a note with NO reminder. I'm mad bro!");
+      throw new RuntimeException("您不能安排一个没有提醒的笔记!");
     }
 
     Reminder reminder = Reminder.fromJson(json);
     Intent intent = buildNoteIntent(note);
     PendingIntent pi = PendingIntent.getBroadcast(context, 0, intent, 0);
     if (reminder.getRepetition() == Reminder.Repetition.ONE_TIME) {
-      Logger.e("Schedule ONE-TIME event to be start at: " + NoteDateFormatter.toString(reminder.getBegin()));
+      Logger.e("一次事件开始时间: " + NoteDateFormatter.toString(reminder.getBegin()));
       alarmManager.set(AlarmManager.RTC_WAKEUP, reminder.getBegin(), pi);
     } else {
-      Logger.e("Schedule REPEATING event to be start at: " + NoteDateFormatter.toString(reminder.getBegin()));
+      Logger.e("重复事件开始时间: " + NoteDateFormatter.toString(reminder.getBegin()));
       Logger.e("with interval = " + TimeUnit.MILLISECONDS.toSeconds(reminder.getRepetition().getInterval()));
       alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, reminder.getBegin(), reminder.getRepetition().getInterval(), pi);
     }

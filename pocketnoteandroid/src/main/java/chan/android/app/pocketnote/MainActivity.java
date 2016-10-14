@@ -46,8 +46,10 @@ public class MainActivity extends SherlockFragmentActivity {
   private static final List<ActionListDialogFragment.Item> PHOTO_ACTIONS = new ArrayList<>();
 
   static {
-    PHOTO_ACTIONS.add(new ActionListDialogFragment.Item(R.drawable.ic_action_device_access_camera, "Take photo"));
-    PHOTO_ACTIONS.add(new ActionListDialogFragment.Item(R.drawable.ic_action_content_picture, "Choose photo"));
+    PHOTO_ACTIONS.add
+            (new ActionListDialogFragment.Item(R.drawable.ic_action_device_access_camera, "Take photo"));
+    PHOTO_ACTIONS.add
+            (new ActionListDialogFragment.Item(R.drawable.ic_action_content_picture, "Choose photo"));
   }
 
   private NavigationDrawerItem[] DRAWER_ITEMS;
@@ -177,7 +179,7 @@ public class MainActivity extends SherlockFragmentActivity {
     // Enable ActionBar app icon to behave as action to toggle nav drawer
     getActionBar().setDisplayHomeAsUpEnabled(true);
     getActionBar().setHomeButtonEnabled(true);
-    getActionBar().setTitle("Pocket Note");
+    getActionBar().setTitle("Galaxy Note");
   }
 
   @Override
@@ -315,13 +317,13 @@ public class MainActivity extends SherlockFragmentActivity {
   private class NavigationDrawerItemConstants {
 
     public static final int NOTES_ID = 99;
-    public static final String NOTES_NAME = "Notes";
+    public static final String NOTES_NAME = "标签";
     public static final int CALENDAR_ID = 100;
-    public static final String CALENDAR_NAME = "Calendar";
+    public static final String CALENDAR_NAME = "日历";
     public static final int TRASH_ID = 101;
-    public static final String TRASH_NAME = "Trash";
+    public static final String TRASH_NAME = "垃圾回收";
     public static final int SETTINGS_ID = 102;
-    public static final String SETTINGS_NAME = "Settings";
+    public static final String SETTINGS_NAME = "设置";
     private NavigationDrawerItemConstants() {
       throw new AssertionError("Constructor is private!");
     }

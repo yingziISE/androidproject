@@ -10,7 +10,7 @@
             android:id="@+id/option_row_$_textview_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Option One"
+            android:text="选择"
             android:textColor="@color/purple_14"
             android:padding="5dp"
             android:textSize="12sp"
