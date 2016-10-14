@@ -15,7 +15,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="General"
+                android:text="界面"
                 android:textColor="@color/purple_12"
                 android:layout_marginLeft="20dp"
                 android:textStyle="bold"
@@ -42,7 +42,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Default color"
+                    android:text="背景颜色"
                     android:layout_gravity="center_vertical"
                     android:textSize="@dimen/settings_title_text_size"
                     android:textColor="#000000"
@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/settings_description_text_size"
                 android:textColor="@color/vimeo_dark_grey"
-                android:text="The color that will be displayed every time you create a new note"
+                android:text="为你每次创建一个新的笔记时设置显示的颜色"
                 />
 
 
@@ -79,7 +79,7 @@
                     android:id="@+id/settings_$_textview_sorting_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Default sorting order"
+                    android:text="排序方法"
                     android:layout_alignTop="@+id/settings_$_spinner_sorting"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
@@ -112,7 +112,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/vimeo_dark_grey"
                 android:textSize="@dimen/settings_description_text_size"
-                android:text="The ordering that used to sort all your notes"
+                android:text="用来整理你所有的笔记的排序"
                 />
 
 
@@ -127,7 +127,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Default view"
+                    android:text="视图"
                     android:layout_gravity="center_vertical"
                     android:textSize="@dimen/settings_title_text_size"
                     android:textColor="#000000"
@@ -148,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/settings_description_text_size"
                 android:textColor="@color/vimeo_dark_grey"
-                android:text="The view that use to display all your notes"
+                android:text="使用显示所有注释的视图"
                 />
 
 
@@ -157,7 +157,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Password"
+                android:text="密码"
                 android:textColor="@color/purple_12"
                 android:layout_marginLeft="20dp"
                 android:textStyle="bold"
@@ -184,7 +184,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Master password"
+                    android:text="用户密码"
                     android:textSize="@dimen/settings_title_text_size"
                     android:layout_centerVertical="true"
                     android:textColor="#000000"
@@ -208,7 +208,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/vimeo_dark_grey"
                 android:textSize="@dimen/settings_description_text_size"
-                android:text="Change or reset your current password"
+                android:text="更改或重置您当前的密码"
                 />
 
         <!-- Personal -->
@@ -217,7 +217,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Personal"
+                android:text="用户"
                 android:textColor="@color/purple_12"
                 android:layout_marginLeft="20dp"
                 android:textStyle="bold"
@@ -248,7 +248,7 @@
                     android:id="@+id/settings_$_textview_display_name_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Display name"
+                    android:text="昵称"
                     android:layout_centerVertical="true"
                     android:layout_gravity="center_vertical"
                     android:textSize="@dimen/settings_title_text_size"
@@ -288,7 +288,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/settings_description_text_size"
                 android:textColor="@color/vimeo_dark_grey"
-                android:text="The name that will be displayed on the main navigation drawer"
+                android:text="将显示在主导航栏上的名称"
                 />
 
 
@@ -306,7 +306,7 @@
                     android:id="@+id/settings_$_textview_photo_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Display photo"
+                    android:text="头像"
                     android:layout_centerVertical="true"
                     android:layout_gravity="center_vertical"
                     android:textSize="@dimen/settings_title_text_size"
@@ -342,7 +342,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/settings_description_text_size"
                 android:textColor="@color/vimeo_dark_grey"
-                android:text="The photo that will be displayed on the main navigation drawer"
+                android:text="将显示在主导航栏上的照片"
                 />
 
         <!-- About -->
@@ -351,7 +351,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="About"
+                android:text="关于我们"
                 android:textColor="@color/purple_12"
                 android:layout_marginLeft="20dp"
                 android:textStyle="bold"
@@ -375,7 +375,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/settings_description_text_size"
                 android:textColor="@color/vimeo_dark_grey"
-                android:text="PocketNote is a free Android application developed by me - Chan Nguyen. Feel free to contact me at atbl1511@gmail.com for any additional features or bug fixes. Thank you for using PocketNote :)"
+                android:text="Galaxy Note是一个免费的Android应用程序开发的作者-yingzi@ISE。随时与我联系1486037081@qq.com任何额外的功能或bug修复。感谢您使用Galaxy Note"
                 />
 
         <Button
@@ -384,11 +384,11 @@
                 android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
-                android:text="Rate us!"
+                android:text="友情链接!"
+            android:visibility="gone"
                 android:textSize="12sp"
                 android:background="@drawable/purple_button"
                 />
-
     </LinearLayout>
 
 </ScrollView>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/values-sw600dp/vpi__attrs.xml -->
+    <!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/values-sw600dp/vpi__attrs.xml -->
     <eat-comment/>
     <attr format="boolean" name="centered"/>
     <attr format="color" name="selectedColor"/>
     <attr format="dimension" name="strokeWidth"/>
     <attr format="color" name="unselectedColor"/>
-    <!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values-sw600dp/values.xml -->
+    <!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values-sw600dp/values.xml -->
     <eat-comment/>
     <bool name="abs__action_bar_expanded_action_views_exclusive">false</bool>
-    <!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/values-sw600dp/vpi__defaults.xml -->
+    <!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/values-sw600dp/vpi__defaults.xml -->
     <eat-comment/>
     <bool name="default_circle_indicator_centered">true</bool>
     <bool name="default_circle_indicator_snap">false</bool>
@@ -25,7 +25,7 @@
     <color name="default_title_indicator_selected_color">#FFFFFFFF</color>
     <color name="default_title_indicator_text_color">#BBFFFFFF</color>
     <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
-    <!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/values-sw600dp/vpi__colors.xml -->
+    <!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/values-sw600dp/vpi__colors.xml -->
     <eat-comment/>
     <color name="vpi__background_holo_dark">#ff000000</color>
     <color name="vpi__background_holo_light">#fff3f3f3</color>
@@ -35,7 +35,7 @@
     <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
     <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
     <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
-    <!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/values-sw600dp/vpi__attrs.xml -->
+    <!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/values-sw600dp/vpi__attrs.xml -->
     <eat-comment/>
     <declare-styleable name="CirclePageIndicator">
         <!-- Whether or not the indicators should be centered. -->
@@ -138,7 +138,7 @@
         <!-- Style of the underline indicator. -->
         <attr format="reference" name="vpiUnderlinePageIndicatorStyle"/>
     </declare-styleable>
-    <!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values-sw600dp/values.xml -->
+    <!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values-sw600dp/values.xml -->
     <eat-comment/>
     <dimen name="abs__action_bar_default_height">56dip</dimen>
     <dimen name="abs__action_bar_icon_vertical_padding">4dip</dimen>
@@ -147,7 +147,7 @@
     <dimen name="abs__action_bar_subtitle_top_margin">-3dp</dimen>
     <dimen name="abs__action_bar_title_text_size">18dp</dimen>
     <dimen name="abs__action_button_min_width">64dip</dimen>
-    <!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/values-sw600dp/vpi__defaults.xml -->
+    <!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/values-sw600dp/vpi__defaults.xml -->
     <eat-comment/>
     <dimen name="default_circle_indicator_radius">3dp</dimen>
     <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
@@ -162,17 +162,17 @@
     <dimen name="default_title_indicator_text_size">15dp</dimen>
     <dimen name="default_title_indicator_title_padding">5dp</dimen>
     <dimen name="default_title_indicator_top_padding">7dp</dimen>
-    <!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values-sw600dp/values.xml -->
+    <!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values-sw600dp/values.xml -->
     <eat-comment/>
     <integer name="abs__max_action_buttons">5</integer>
-    <!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/values-sw600dp/vpi__defaults.xml -->
+    <!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/values-sw600dp/vpi__defaults.xml -->
     <eat-comment/>
     <integer name="default_circle_indicator_orientation">0</integer>
     <integer name="default_title_indicator_footer_indicator_style">2</integer>
     <integer name="default_title_indicator_line_position">0</integer>
     <integer name="default_underline_indicator_fade_delay">300</integer>
     <integer name="default_underline_indicator_fade_length">400</integer>
-    <!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/values-sw600dp/styles.xml -->
+    <!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/values-sw600dp/styles.xml -->
     <eat-comment/>
     <style name="ReminderButton">
         <item name="android:background">@drawable/calendar_purple_button</item>
@@ -185,7 +185,7 @@
         <item name="android:gravity">center</item>
         <item name="android:padding">1dp</item>
     </style>
-    <!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/values-sw600dp/vpi__styles.xml -->
+    <!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/values-sw600dp/vpi__styles.xml -->
     <eat-comment/>
     <style name="TextAppearance.TabPageIndicator" parent="Widget">
         <item name="android:textStyle">bold</item>

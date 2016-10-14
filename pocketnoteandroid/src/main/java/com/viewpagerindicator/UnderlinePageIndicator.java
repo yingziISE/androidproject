@@ -89,13 +89,16 @@ public class UnderlinePageIndicator extends View implements com.viewpagerindicat
         final boolean defaultFades = res.getBoolean(R.bool.default_underline_indicator_fades);
         final int defaultFadeDelay = res.getInteger(R.integer.default_underline_indicator_fade_delay);
         final int defaultFadeLength = res.getInteger(R.integer.default_underline_indicator_fade_length);
-        final int defaultSelectedColor = res.getColor(R.color.default_underline_indicator_selected_color);
+        final int defaultSelectedColor = res.getColor
+                (R.color.default_underline_indicator_selected_color);
 
         //Retrieve styles attributes
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.UnderlinePageIndicator, defStyle, 0);
+        TypedArray a = context.obtainStyledAttributes
+                (attrs, R.styleable.UnderlinePageIndicator, defStyle, 0);
 
         setFades(a.getBoolean(R.styleable.UnderlinePageIndicator_fades, defaultFades));
-        setSelectedColor(a.getColor(R.styleable.UnderlinePageIndicator_selectedColor, defaultSelectedColor));
+        setSelectedColor(a.getColor
+                (R.styleable.UnderlinePageIndicator_selectedColor, defaultSelectedColor));
         setFadeDelay(a.getInteger(R.styleable.UnderlinePageIndicator_fadeDelay, defaultFadeDelay));
         setFadeLength(a.getInteger(R.styleable.UnderlinePageIndicator_fadeLength, defaultFadeLength));
 

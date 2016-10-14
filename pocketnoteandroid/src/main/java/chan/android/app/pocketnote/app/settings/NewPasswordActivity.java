@@ -27,16 +27,16 @@ public class NewPasswordActivity extends Activity {
         final String repeat = editTextRepeat.getText().toString();
         if (password.equals(repeat)) {
           if (password.length() < 4) {
-            editTextPassword.setError("Password must have at least 4 character");
+            editTextPassword.setError("密码至少4个字符");
           } else if (password.length() > 8) {
-            editTextPassword.setError("Password can't be longer than 8 character");
+            editTextPassword.setError("密码不能超过8个字符");
           } else {
             AppPreferences.savePassword(password);
-            toast("Password was created successfully. You can lock all your notes now!");
+            toast("密码更改成功，您可以查看所有备忘录了!");
             finish();
           }
         } else {
-          editTextRepeat.setError("Password does not match!");
+          editTextRepeat.setError("密码错误!");
         }
       }
     });

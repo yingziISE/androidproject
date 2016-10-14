@@ -9,7 +9,7 @@
             android:id="@+id/purple_dialog_$_textview_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Title"
+            android:text="列表"
             android:padding="10dp"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
@@ -23,4 +23,4 @@
             android:layout_height="match_parent"
             />
 
-</LinearLayout><!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/layout/purple_dialog.xml -->
+</LinearLayout><!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/layout/purple_dialog.xml -->

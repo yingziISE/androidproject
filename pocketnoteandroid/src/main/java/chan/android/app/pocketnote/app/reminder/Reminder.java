@@ -106,12 +106,12 @@ public class Reminder {
   }
 
   public enum Repetition {
-    ONE_TIME("One time event", 0),
-    HOURLY("Hourly", TimeUnit.HOURS.toMillis(1)),
-    DAILY("Daily", TimeUnit.DAYS.toMillis(1)),
-    WEEKLY("Weekly", TimeUnit.DAYS.toMillis(7)),
-    MONTHLY("Monthly", TimeUnit.DAYS.toMillis(30)),
-    YEARLY("Yearly", TimeUnit.DAYS.toMillis(365));
+    ONE_TIME("一次事件", 0),
+    HOURLY("每小时", TimeUnit.HOURS.toMillis(1)),
+    DAILY("每日", TimeUnit.DAYS.toMillis(1)),
+    WEEKLY("每周", TimeUnit.DAYS.toMillis(7)),
+    MONTHLY("月", TimeUnit.DAYS.toMillis(30)),
+    YEARLY("年", TimeUnit.DAYS.toMillis(365));
 
     final String description;
     final long milliseconds;
@@ -132,9 +132,9 @@ public class Reminder {
   }
 
   public enum Type {
-    ALL_DAY("All day"),
-    TIME_ALARM("Time alarm"),
-    PIN_TO_STATUS_BAR("Pin to status bar");
+    ALL_DAY("全天"),
+    TIME_ALARM("时间提醒"),
+    PIN_TO_STATUS_BAR("引脚状态栏");
 
     final String description;
 

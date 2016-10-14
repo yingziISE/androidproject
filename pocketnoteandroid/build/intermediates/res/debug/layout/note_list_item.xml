@@ -37,7 +37,7 @@
             android:textSize="10sp"
             android:maxLength="20"
             android:maxLines="1"
-            android:text="Content"
+            android:text="内容"
             android:textColor="@color/vimeo_dark_grey"
             android:layout_below="@+id/note_item_$_textview_title"
             android:layout_alignLeft="@+id/note_item_$_textview_title"/>
@@ -48,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="8sp"
-            android:text="Small Text"
+            android:text="小号字体"
             android:layout_marginRight="10dp"
             android:textColor="@color/vimeo_dark_grey"
             android:layout_alignTop="@+id/note_item_$_textview_title"
@@ -77,4 +77,4 @@
             android:layout_below="@+id/note_item_$_textview_date"
             android:layout_toLeftOf="@+id/note_item_$_imageview_lock"/>
 
-</RelativeLayout><!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/layout/note_list_item.xml -->
+</RelativeLayout><!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/layout/note_list_item.xml -->

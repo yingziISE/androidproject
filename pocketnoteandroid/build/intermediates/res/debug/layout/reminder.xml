@@ -18,7 +18,7 @@
                 android:layout_width="wrap_content"
                 android:textSize="@dimen/reminder_text_title_size"
                 android:layout_height="wrap_content"
-                android:text="Type"
+                android:text="分类"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:drawableRight="@drawable/ic_icon_tiny_alert"
@@ -56,7 +56,7 @@
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="When"
+                        android:text="时间"
                         android:textStyle="bold"
                         android:textSize="@dimen/reminder_text_title_size"
                         android:textColor="#FFFFFF"
@@ -90,7 +90,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Repetition"
+                        android:text="重复"
                         android:textStyle="bold"
                         android:textSize="@dimen/reminder_text_title_size"
                         android:textColor="#FFFFFF"
@@ -280,14 +280,14 @@
                 android:id="@+id/reminder_$_button_cancel"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:text="Cancel"
+                android:text="取消"
                 android:layout_weight="0.33"
                 style="@style/ReminderButton"
                 />
 
         <Button
                 android:id="@+id/reminder_$_button_reset"
-                android:text="Reset"
+                android:text="重复"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 style="@style/ReminderButton"
@@ -296,7 +296,7 @@
 
         <Button
                 android:id="@+id/reminder_$_button_save"
-                android:text="Save"
+                android:text="保存"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 style="@style/ReminderButton"
@@ -304,4 +304,4 @@
                 />
 
     </LinearLayout>
-</RelativeLayout><!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/layout/reminder.xml -->
+</RelativeLayout><!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/layout/reminder.xml -->

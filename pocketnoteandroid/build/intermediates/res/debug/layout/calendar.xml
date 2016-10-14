@@ -165,14 +165,14 @@
                         android:id="@+id/calendar_$_button_prev"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:text="Previous"
+                        android:text="上月"
                         android:layout_weight="1"
                         style="@style/ReminderButton"
                         />
 
                 <Button
                         android:id="@+id/calendar_$_button_jump"
-                        android:text="Jump"
+                        android:text="调至"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         style="@style/ReminderButton"
@@ -181,7 +181,7 @@
 
                 <Button
                         android:id="@+id/calendar_$_button_next"
-                        android:text="Next"
+                        android:text="下月"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         style="@style/ReminderButton"
@@ -217,4 +217,4 @@
 
 
     </ViewFlipper>
-</LinearLayout><!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/layout/calendar.xml -->
+</LinearLayout><!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/layout/calendar.xml -->

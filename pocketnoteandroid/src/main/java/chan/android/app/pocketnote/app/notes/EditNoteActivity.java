@@ -140,14 +140,14 @@ public class EditNoteActivity extends SherlockFragmentActivity {
     if (note != null && !oldNote) {
       PocketNoteManager.getPocketNoteManager().add(note);
       note.setColor(chosenColor);
-      Toast.makeText(this, "Saved", Toast.LENGTH_LONG).show();
+      Toast.makeText(this, "保存", Toast.LENGTH_LONG).show();
     } else if (oldNote) {
       editingNote.setTitle(note.getTitle());
       editingNote.setContent(note.getContent());
       editingNote.setColor(note.getColor());
       if (different(originalNote, editingNote)) {
         PocketNoteManager.getPocketNoteManager().edit(editingNote);
-        Toast.makeText(this, "Updated", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "更新", Toast.LENGTH_LONG).show();
       }
     }
 

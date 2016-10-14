@@ -122,7 +122,7 @@ public class TrashFragment extends SherlockFragment implements LoaderManager.Loa
   @Override
   public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
     String query = "";
-    if (bundle != null && bundle.getString("query") != null) {
+    if (bundle != null && bundle.getString("查询") != null) {
       query = bundle.getString("query");
     }
 
@@ -208,14 +208,14 @@ public class TrashFragment extends SherlockFragment implements LoaderManager.Loa
 
     private enum Option {
 
-      REMOVE("Delete permanently", R.drawable.ic_drawer_trash) {
+      REMOVE("彻底删除", R.drawable.ic_drawer_trash) {
         @Override
         public void choose(Context context, Note note) {
           PocketNoteManager.getPocketNoteManager().remove(note);
         }
       },
 
-      RESTORE("Restore", R.drawable.ic_action_restore) {
+      RESTORE("恢复", R.drawable.ic_action_restore) {
         @Override
         public void choose(Context context, Note note) {
           PocketNoteManager.getPocketNoteManager().restore(note);

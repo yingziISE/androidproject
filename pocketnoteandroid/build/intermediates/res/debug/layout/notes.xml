@@ -58,7 +58,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Add Note"
+                    android:text="新增"
                     android:textSize="24sp"
                     android:textColor="@color/purple_14"
                     android:textStyle="bold"
@@ -70,7 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Not Found"
+                android:text="没有内容"
                 android:textSize="24sp"
                 android:textColor="@color/purple_14"
                 android:textStyle="bold"
@@ -89,4 +89,4 @@
             />
 
 
-</RelativeLayout><!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/layout/notes.xml -->
+</RelativeLayout><!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/layout/notes.xml -->

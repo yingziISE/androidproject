@@ -27,7 +27,7 @@ import com.actionbarsherlock.view.MenuInflater;
 
 public class NotesFragment extends SherlockFragment implements LoaderManager.LoaderCallbacks<Cursor> {
 
-  public static final String TAG = "notes";
+  public static final String TAG = "备忘录";
 
   private static final int FLIPPER_LIST_VIEW = 0;
 
@@ -173,17 +173,17 @@ public class NotesFragment extends SherlockFragment implements LoaderManager.Loa
         d.addPickOptionListener(new OptionsTabDialogFragment.PickOptionListener() {
           @Override
           public void onPick(OptionsTabDialogFragment.Option option) {
-            if ("As list view".equals(option.getTitle())) {
+            if ("列表视图".equals(option.getTitle())) {
               currentCollectionViewIndex = 0;
               viewFlipper.setDisplayedChild(currentCollectionViewIndex);
-            } else if ("As grid view".equals(option.getTitle())) {
+            } else if ("网格视图".equals(option.getTitle())) {
               currentCollectionViewIndex = 1;
               viewFlipper.setDisplayedChild(currentCollectionViewIndex);
-            } else if ("By modified time".equals(option.getTitle())) {
+            } else if ("修改时间".equals(option.getTitle())) {
               sortBy(currentSortOrder, currentSortByColumn, NoteDbTable.COLUMN_MODIFIED_TIME, currentCollectionViewIndex);
-            } else if ("By alphabet".equals(option.getTitle())) {
+            } else if ("字母".equals(option.getTitle())) {
               sortBy(currentSortOrder, currentSortByColumn, NoteDbTable.COLUMN_TITLE, currentCollectionViewIndex);
-            } else if ("By color".equals(option.getTitle())) {
+            } else if ("颜色".equals(option.getTitle())) {
               sortBy(currentSortOrder, currentSortByColumn, NoteDbTable.COLUMN_COLOR, currentCollectionViewIndex);
             }
           }
@@ -314,7 +314,7 @@ public class NotesFragment extends SherlockFragment implements LoaderManager.Loa
       final Note note = Note.fromCursor(cursor);
       if (note.isLocked()) {
         final PasswordDialogFragment d = new PasswordDialogFragment();
-        d.show(fragment.getFragmentManager(), "password");
+        d.show(fragment.getFragmentManager(), "密码");
         d.setOnPasswordEnterListener(new PasswordDialogFragment.OnPasswordEnterListener() {
           @Override
           public void onEnter(String password) {
@@ -322,7 +322,7 @@ public class NotesFragment extends SherlockFragment implements LoaderManager.Loa
               d.dismiss();
               launchEditNoteActivity(note);
             } else {
-              d.showErrorMessage("Your password is incorrect!");
+              d.showErrorMessage("密码错误!");
             }
           }
         });

@@ -68,7 +68,7 @@ class OnLongClickNoteListener implements AdapterView.OnItemLongClickListener {
 
   public enum Option {
 
-    CHECK("Check", R.drawable.ic_action_check) {
+    CHECK("标记", R.drawable.ic_action_check) {
       @Override
       public void choose(Fragment fragment, final Note note) {
         Callback callback = new Callback() {
@@ -85,7 +85,7 @@ class OnLongClickNoteListener implements AdapterView.OnItemLongClickListener {
       }
     },
 
-    UNCHECK("Uncheck", R.drawable.ic_action_uncheck) {
+    UNCHECK("取消标记", R.drawable.ic_action_uncheck) {
       @Override
       public void choose(Fragment fragment, Note note) {
         Callback callback = new Callback() {
@@ -102,7 +102,7 @@ class OnLongClickNoteListener implements AdapterView.OnItemLongClickListener {
       }
     },
 
-    LOCK("Lock", R.drawable.ic_lock) {
+    LOCK("加密", R.drawable.ic_lock) {
       @Override
       public void choose(Fragment fragment, Note note) {
         if (AppPreferences.getPassword().equals("")) {
@@ -115,7 +115,7 @@ class OnLongClickNoteListener implements AdapterView.OnItemLongClickListener {
       }
     },
 
-    UNLOCK("Unlock", R.drawable.ic_unlock) {
+    UNLOCK("取消加密", R.drawable.ic_unlock) {
       @Override
       public void choose(Fragment fragment, final Note note) {
         askPassword(fragment, note, new Callback() {
@@ -127,7 +127,7 @@ class OnLongClickNoteListener implements AdapterView.OnItemLongClickListener {
       }
     },
 
-    TRASH("Delete", R.drawable.ic_drawer_trash) {
+    TRASH("删除", R.drawable.ic_drawer_trash) {
       @Override
       public void choose(Fragment fragment, Note note) {
         Callback callback = new Callback() {
@@ -144,7 +144,7 @@ class OnLongClickNoteListener implements AdapterView.OnItemLongClickListener {
       }
     },
 
-    REMINDER("Reminder", R.drawable.ic_action_clock) {
+    REMINDER("提醒", R.drawable.ic_action_clock) {
       @Override
       public void choose(Fragment fragment, Note note) {
         Callback callback = new Callback() {
@@ -199,7 +199,7 @@ class OnLongClickNoteListener implements AdapterView.OnItemLongClickListener {
 
     public void askPassword(final Fragment fragment, final Note note, final Callback callback) {
       final PasswordDialogFragment d = new PasswordDialogFragment();
-      d.show(fragment.getFragmentManager(), "password");
+      d.show(fragment.getFragmentManager(), "密码");
       d.setOnPasswordEnterListener(new PasswordDialogFragment.OnPasswordEnterListener() {
         @Override
         public void onEnter(String password) {
@@ -207,7 +207,7 @@ class OnLongClickNoteListener implements AdapterView.OnItemLongClickListener {
             d.dismiss();
             callback.doWork(fragment, note);
           } else {
-            d.showErrorMessage("Password is incorrect!");
+            d.showErrorMessage("密码错误!");
           }
         }
       });

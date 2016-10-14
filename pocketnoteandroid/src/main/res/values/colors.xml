@@ -35,7 +35,7 @@
     <color name="aluminum4">#ff888a85</color>
     <color name="aluminum5">#ff555753</color>
     <color name="aluminum5_5">#ff50575a</color>
-    <color name="aluminum6">#ff2e3436</color>
+    <color name="aluminum6">#1aeae3</color>
     <color name="light_grey">#ffeef0f2</color>
     <color name="vimeo_light_grey">#ffd6dbe1</color>
     <color name="vimeo_grey">#ffc5ccd4</color>
@@ -82,7 +82,7 @@
     <color name="brown_13">#66594C</color>
 
 
-    <color name="purple_0">#eee8f3</color>
+ <!--   <color name="purple_0">#eee8f3</color>
     <color name="purple_1">#ddd1e7</color>
     <color name="purple_2">#ccbadc</color>
     <color name="purple_3">#bba3d0</color>
@@ -97,7 +97,22 @@
     <color name="purple_12">#3b1261</color>
     <color name="purple_13">#2a0d45</color>
     <color name="purple_14">#220a37</color>
-
+    -->
+    <color name="purple_0">#eee8f3</color>
+    <color name="purple_1">#ddd1e7</color>
+    <color name="purple_2">#ccbadc</color>
+    <color name="purple_3">#bba3d0</color>
+    <color name="purple_4">#dcd6e1</color>
+    <color name="purple_5">#75b995</color>
+    <color name="purple_6">#5ead98</color>
+    <color name="purple_7">#70a247</color>
+    <color name="purple_8">#309694</color>
+    <color name="purple_9">#1a8b7e</color>
+    <color name="purple_10">#17767d</color>
+    <color name="purple_11">#0ca0a3</color>
+    <color name="purple_12">#23cca2</color>
+    <color name="purple_13">#2aaed6</color>
+    <color name="purple_14">#3a59b6</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
 

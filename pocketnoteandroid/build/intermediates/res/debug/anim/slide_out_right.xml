@@ -5,4 +5,4 @@
                android:toXDelta="+100%"
                android:interpolator="@android:anim/decelerate_interpolator"
                android:duration="200"/>
-</set><!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/anim/slide_out_right.xml -->
+</set><!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/anim/slide_out_right.xml -->

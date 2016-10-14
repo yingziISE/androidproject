@@ -182,7 +182,7 @@ public class CalendarFragment extends SherlockFragment implements View.OnTouchLi
                 d.dismiss();
                 launchEditNoteActivity(note.getDay(), month, year, note);
               } else {
-                d.showErrorMessage("Your password is incorrect!");
+                d.showErrorMessage("密码错误!");
               }
             }
           });
@@ -412,7 +412,7 @@ public class CalendarFragment extends SherlockFragment implements View.OnTouchLi
         public void onEditNote(final Note note) {
           if (note.isLocked()) {
             final PasswordDialogFragment d = new PasswordDialogFragment();
-            d.show(getFragmentManager(), "password");
+            d.show(getFragmentManager(), "密码");
             d.setOnPasswordEnterListener(new PasswordDialogFragment.OnPasswordEnterListener() {
               @Override
               public void onEnter(String password) {
@@ -420,7 +420,7 @@ public class CalendarFragment extends SherlockFragment implements View.OnTouchLi
                   d.dismiss();
                   launchEditNoteActivity(day, month, year, note);
                 } else {
-                  d.showErrorMessage("Your password is incorrect!");
+                  d.showErrorMessage("密码错误!");
                 }
               }
             });

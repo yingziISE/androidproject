@@ -150,17 +150,20 @@ public class PocketNoteManager implements NoteManager {
     ContentValues cv = new ContentValues();
     cv.put(NoteDbTable.COLUMN_CHECKED, NO);
     note.setChecked(false);
-    context.getContentResolver().update(NoteContentProvider.CONTENT_URI, cv, NoteDbTable.COLUMN_MODIFIED_TIME + "=" + note.getModifiedTime(), null);
+    context.getContentResolver().update(NoteContentProvider.CONTENT_URI, cv,
+            NoteDbTable.COLUMN_MODIFIED_TIME + "=" + note.getModifiedTime(), null);
   }
 
   @Override
   public void removeAll() {
-    context.getContentResolver().delete(NoteContentProvider.CONTENT_URI, NoteDbTable.COLUMN_TRASHED + "=1", null);
+    context.getContentResolver().delete
+            (NoteContentProvider.CONTENT_URI, NoteDbTable.COLUMN_TRASHED + "=1", null);
   }
 
   @Override
   public int getId(Note note) {
-    Cursor cursor = context.getContentResolver().query(NoteContentProvider.CONTENT_URI, new String[]{NoteDbTable.COLUMN_ID}, NoteDbTable.COLUMN_MODIFIED_TIME + "=" + note.getModifiedTime(), null, null);
+    Cursor cursor = context.getContentResolver().query
+            (NoteContentProvider.CONTENT_URI, new String[]{NoteDbTable.COLUMN_ID}, NoteDbTable.COLUMN_MODIFIED_TIME + "=" + note.getModifiedTime(), null, null);
     if (cursor != null) {
       cursor.moveToFirst();
     }
@@ -174,14 +177,16 @@ public class PocketNoteManager implements NoteManager {
     ContentValues cv = new ContentValues();
     cv.put(NoteDbTable.COLUMN_REMINDER, reminder);
     note.setReminder(reminder);
-    context.getContentResolver().update(NoteContentProvider.CONTENT_URI, cv, NoteDbTable.COLUMN_MODIFIED_TIME + "=" + note.getModifiedTime(), null);
+    context.getContentResolver().update
+            (NoteContentProvider.CONTENT_URI, cv, NoteDbTable.COLUMN_MODIFIED_TIME + "=" + note.getModifiedTime(), null);
   }
 
   @Override
   public void removeReminder(Note note) {
     ContentValues cv = new ContentValues();
     cv.put(NoteDbTable.COLUMN_REMINDER, "");
-    context.getContentResolver().update(NoteContentProvider.CONTENT_URI, cv, NoteDbTable.COLUMN_MODIFIED_TIME + "=" + note.getModifiedTime(), null);
+    context.getContentResolver().update
+            (NoteContentProvider.CONTENT_URI, cv, NoteDbTable.COLUMN_MODIFIED_TIME + "=" + note.getModifiedTime(), null);
   }
 
   @Override

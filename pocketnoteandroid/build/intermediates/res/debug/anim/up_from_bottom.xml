@@ -5,4 +5,4 @@
             android:fromXDelta="0%" android:toXDelta="0%"
             android:fromYDelta="100%" android:toYDelta="0%"
             android:duration="400" />
-</set><!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/anim/up_from_bottom.xml -->
+</set><!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/anim/up_from_bottom.xml -->

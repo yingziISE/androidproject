@@ -39,7 +39,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Empty Trash"
+                    android:text="回收站为空"
                     android:layout_gravity="center_horizontal"
                     android:textSize="24sp"
                     android:textColor="@color/purple_14"
@@ -48,4 +48,4 @@
         </LinearLayout>
     </ViewFlipper>
 
-</LinearLayout><!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/layout/trash.xml -->
+</LinearLayout><!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/layout/trash.xml -->

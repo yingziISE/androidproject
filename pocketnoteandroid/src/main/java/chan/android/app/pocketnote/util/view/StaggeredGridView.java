@@ -256,7 +256,7 @@ public class StaggeredGridView extends ViewGroup {
    */
   public void setColumnCount(int colCount) {
     if (colCount < 1 && colCount != COLUMN_COUNT_AUTO) {
-      throw new IllegalArgumentException("Column count must be at least 1 - received " +
+      throw new IllegalArgumentException("至少有一列" +
         colCount);
     }
     final boolean needsPopulate = colCount != mColCount;

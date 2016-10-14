@@ -142,9 +142,11 @@ public class FlowLayout extends ViewGroup {
     }
 
     if (orientation == HORIZONTAL) {
-      this.setMeasuredDimension(resolveSize(controlMaxLength, widthMeasureSpec), resolveSize(controlMaxThickness, heightMeasureSpec));
+      this.setMeasuredDimension(resolveSize(controlMaxLength, widthMeasureSpec),
+              resolveSize(controlMaxThickness, heightMeasureSpec));
     } else {
-      this.setMeasuredDimension(resolveSize(controlMaxThickness, widthMeasureSpec), resolveSize(controlMaxLength, heightMeasureSpec));
+      this.setMeasuredDimension(resolveSize(controlMaxThickness, widthMeasureSpec),
+              resolveSize(controlMaxLength, heightMeasureSpec));
     }
   }
 
@@ -314,8 +316,10 @@ public class FlowLayout extends ViewGroup {
     private void readStyleParameters(Context context, AttributeSet attributeSet) {
       TypedArray a = context.obtainStyledAttributes(attributeSet, R.styleable.FlowLayout_LayoutParams);
       try {
-        horizontalSpacing = a.getDimensionPixelSize(R.styleable.FlowLayout_LayoutParams_layout_horizontalSpacing, NO_SPACING);
-        verticalSpacing = a.getDimensionPixelSize(R.styleable.FlowLayout_LayoutParams_layout_verticalSpacing, NO_SPACING);
+        horizontalSpacing = a.getDimensionPixelSize
+                (R.styleable.FlowLayout_LayoutParams_layout_horizontalSpacing, NO_SPACING);
+        verticalSpacing = a.getDimensionPixelSize
+                (R.styleable.FlowLayout_LayoutParams_layout_verticalSpacing, NO_SPACING);
         newLine = a.getBoolean(R.styleable.FlowLayout_LayoutParams_layout_newLine, false);
       } finally {
         a.recycle();

@@ -4,7 +4,7 @@ import android.util.Log;
 
 public class Logger {
 
-  private static final String TAG = "PocketNote";
+  private static final String TAG = "备忘录";
 
   public static void e(String msg) {
     Log.e(TAG, msg);

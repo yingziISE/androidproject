@@ -219,7 +219,7 @@ class OnLongClickCalendarNoteListener implements AdapterView.OnItemLongClickList
 
     public void askPassword(final Fragment fragment, final Note note, final Callback callback) {
       final PasswordDialogFragment d = new PasswordDialogFragment();
-      d.show(fragment.getFragmentManager(), "password");
+      d.show(fragment.getFragmentManager(), "密码");
       d.setOnPasswordEnterListener(new PasswordDialogFragment.OnPasswordEnterListener() {
         @Override
         public void onEnter(String password) {
@@ -227,7 +227,7 @@ class OnLongClickCalendarNoteListener implements AdapterView.OnItemLongClickList
             d.dismiss();
             callback.doWork(fragment, note);
           } else {
-            d.showErrorMessage("Password is incorrect!");
+            d.showErrorMessage("密码错误!");
           }
         }
       });

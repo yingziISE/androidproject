@@ -9,7 +9,7 @@
             android:id="@+id/purple_dialog_row_$_textview_item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Item"
+            android:text="提醒"
             android:padding="5dp"
             android:gravity="left|center_vertical"
             android:drawableLeft="@drawable/ic_action_clock"

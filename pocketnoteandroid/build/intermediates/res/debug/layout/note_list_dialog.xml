@@ -10,7 +10,7 @@
             android:id="@+id/note_list_$_textview_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Title"
+            android:text="列表"
             android:padding="10dp"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
@@ -45,14 +45,14 @@
                 android:id="@+id/note_list_$_button_cancel"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:text="Cancel"
+                android:text="取消"
                 android:layout_weight="0.5"
                 style="@style/ReminderButton"
                 />
 
         <Button
                 android:id="@+id/note_list_$_button_add"
-                android:text="Add"
+                android:text="添加"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 style="@style/ReminderButton"
@@ -60,4 +60,4 @@
                 />
 
     </LinearLayout>
-</RelativeLayout><!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/layout/note_list_dialog.xml -->
+</RelativeLayout><!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/layout/note_list_dialog.xml -->

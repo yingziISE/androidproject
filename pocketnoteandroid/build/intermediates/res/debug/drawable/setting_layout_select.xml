@@ -5,4 +5,4 @@
     <item android:drawable="@color/purple_8" android:state_pressed="true"/>
     <item android:drawable="@color/purple_8" android:state_selected="true"/>
 
-</selector><!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/drawable/setting_layout_select.xml -->
+</selector><!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/drawable/setting_layout_select.xml -->

@@ -108,14 +108,17 @@ public class Note implements Parcelable, Comparable<Note> {
       cursor.getLong(cursor.getColumnIndexOrThrow(NoteDbTable.COLUMN_MODIFIED_TIME)),
       cursor.getInt(cursor.getColumnIndexOrThrow(NoteDbTable.COLUMN_COLOR)));
 
-    boolean locked = cursor.getInt(cursor.getColumnIndexOrThrow(NoteDbTable.COLUMN_LOCKED)) == 1 ? true : false;
+    boolean locked = cursor.getInt
+            (cursor.getColumnIndexOrThrow(NoteDbTable.COLUMN_LOCKED)) == 1 ? true : false;
     note.setLocked(locked);
 
 
-    boolean trashed = cursor.getInt(cursor.getColumnIndexOrThrow(NoteDbTable.COLUMN_TRASHED)) == 1 ? true : false;
+    boolean trashed = cursor.getInt
+            (cursor.getColumnIndexOrThrow(NoteDbTable.COLUMN_TRASHED)) == 1 ? true : false;
     note.setTrashed(trashed);
 
-    boolean checked = cursor.getInt(cursor.getColumnIndexOrThrow(NoteDbTable.COLUMN_CHECKED)) == 1 ? true : false;
+    boolean checked = cursor.getInt
+            (cursor.getColumnIndexOrThrow(NoteDbTable.COLUMN_CHECKED)) == 1 ? true : false;
     note.setChecked(checked);
 
     if (trashed) {

@@ -5,4 +5,4 @@
     <item android:drawable="@color/drawer_press" android:state_pressed="true"/>
     <item android:drawable="@color/drawer_focus" android:state_selected="true"/>
 
-</selector><!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/drawable/drawer_list_selector.xml -->
+</selector><!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/drawable/drawer_list_selector.xml -->

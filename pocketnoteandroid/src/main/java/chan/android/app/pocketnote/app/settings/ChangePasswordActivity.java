@@ -18,9 +18,12 @@ public class ChangePasswordActivity extends Activity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.change_password);
 
-    final EditText editTextOldPassword = (EditText) findViewById(R.id.change_password_$_edittext_old_password);
-    final EditText editTextPassword = (EditText) findViewById(R.id.change_password_$_edittext_new_password);
-    final EditText editTextRepeat = (EditText) findViewById(R.id.change_password_$_edittext_repeat_password);
+    final EditText editTextOldPassword =
+            (EditText) findViewById(R.id.change_password_$_edittext_old_password);
+    final EditText editTextPassword =
+            (EditText) findViewById(R.id.change_password_$_edittext_new_password);
+    final EditText editTextRepeat =
+            (EditText) findViewById(R.id.change_password_$_edittext_repeat_password);
 
     final Button buttonSave = (Button) findViewById(R.id.change_password_$_button_save);
     buttonSave.setOnClickListener(new View.OnClickListener() {
@@ -32,19 +35,19 @@ public class ChangePasswordActivity extends Activity {
         if (doesOldPasswordMatch(old)) {
           if (password.equals(repeat)) {
             if (password.length() < 4) {
-              editTextPassword.setError("Password must have at least 4 character");
+              editTextPassword.setError("密码至少4个字符");
             } else if (password.length() > 8) {
-              editTextPassword.setError("Password can't be longer than 8 character");
+              editTextPassword.setError("密码不能超过8个字符");
             } else {
               AppPreferences.savePassword(password);
-              toast("Your new password was updated successfully");
+              toast("您的密码更改成功");
               finish();
             }
           } else {
-            editTextRepeat.setError("Password mismatch!");
+            editTextRepeat.setError("密码错误!");
           }
         } else {
-          editTextOldPassword.setError("Your password is invalid!");
+          editTextOldPassword.setError("密码无效!");
         }
       }
     });

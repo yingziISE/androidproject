@@ -151,7 +151,7 @@ public class CirclePageIndicator extends View implements com.viewpagerindicator.
                 break;
 
             default:
-                throw new IllegalArgumentException("Orientation must be either HORIZONTAL or VERTICAL.");
+                throw new IllegalArgumentException("方向必须是水平的或垂直的.");
         }
     }
 
@@ -355,7 +355,8 @@ public class CirclePageIndicator extends View implements com.viewpagerindicator.
                     final int newPointerIndex = pointerIndex == 0 ? 1 : 0;
                     mActivePointerId = MotionEventCompat.getPointerId(ev, newPointerIndex);
                 }
-                mLastMotionX = MotionEventCompat.getX(ev, MotionEventCompat.findPointerIndex(ev, mActivePointerId));
+                mLastMotionX = MotionEventCompat.getX
+                        (ev, MotionEventCompat.findPointerIndex(ev, mActivePointerId));
                 break;
         }
 
@@ -387,7 +388,7 @@ public class CirclePageIndicator extends View implements com.viewpagerindicator.
     @Override
     public void setCurrentItem(int item) {
         if (mViewPager == null) {
-            throw new IllegalStateException("ViewPager has not been bound.");
+            throw new IllegalStateException("页面没有绑定.");
         }
         mViewPager.setCurrentItem(item);
         mCurrentPage = item;

@@ -10,9 +10,9 @@
             android:id="@+id/option_row_$_textview_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Option One"
+            android:text="选择"
             android:textColor="@color/purple_14"
             android:padding="5dp"
             android:textSize="12sp"
             />
-</LinearLayout><!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/layout/option_row.xml -->
+</LinearLayout><!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/layout/option_row.xml -->

@@ -18,13 +18,13 @@ public class OptionsTabDialogFragment extends DialogFragment {
 
   public static final String TAG = OptionsTabDialogFragment.class.getSimpleName();
   private static final Option[] VIEW_OPTIONS = new Option[]{
-    new Option(R.drawable.ic_action_collections_view_as_list, "As list view"),
-    new Option(R.drawable.ic_action_collections_view_as_grid, "As grid view")
+    new Option(R.drawable.ic_action_collections_view_as_list, "表格视图"),
+    new Option(R.drawable.ic_action_collections_view_as_grid, "网格视图")
   };
   private static final Option[] SORT_OPTIONS = new Option[]{
-    new Option(R.drawable.ic_action_clock, "By modified time"),
-    new Option(R.drawable.ic_action_alphabetical_sorting, "By alphabet"),
-    new Option(R.drawable.ic_action_color_pencil, "By color")
+    new Option(R.drawable.ic_action_clock, "修改时间"),
+    new Option(R.drawable.ic_action_alphabetical_sorting, "字母"),
+    new Option(R.drawable.ic_action_color_pencil, "颜色")
   };
   private PickOptionListener pickListener;
 
@@ -48,13 +48,13 @@ public class OptionsTabDialogFragment extends DialogFragment {
     TabHost.TabSpec spec = tabs.newTabSpec("tag1");
     spec.setContent(R.id.tab_host_$_listview_sort_by);
     populateListView(root, R.id.tab_host_$_listview_sort_by, Arrays.asList(SORT_OPTIONS));
-    spec.setIndicator("Sort by");
+    spec.setIndicator("排序");
     tabs.addTab(spec);
 
     spec = tabs.newTabSpec("tag2");
     spec.setContent(R.id.tab_host_$_listview_view);
     populateListView(root, R.id.tab_host_$_listview_view, Arrays.asList(VIEW_OPTIONS));
-    spec.setIndicator("View");
+    spec.setIndicator("视图");
     tabs.addTab(spec);
 
     getDialog().getWindow().requestFeature(Window.FEATURE_NO_TITLE);

@@ -9,4 +9,4 @@
             android:bottom="3dp"/>
     <corners android:radius="5dp"/>
     <solid android:color="@color/brown_4"/>
-</shape> <!-- From: file:/Users/chan/Documents/workspace-contract/pocket-note-android/pocketnoteandroid/src/main/res/drawable/rounded_square.xml -->
+</shape> <!-- From: file:/I:/Android/pocket-note-android/pocket-note-android/pocketnoteandroid/src/main/res/drawable/rounded_square.xml -->
